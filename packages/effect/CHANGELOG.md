@@ -1,5 +1,13 @@
 # effect
 
+## 4.0.0-rc.119
+
+### Patch Changes
+
+- [#8580](https://github.com/Effect-TS/effect/pull/8580) [`cbfc7b4`](https://github.com/Effect-TS/effect/commit/cbfc7b422046111c439a69ecbce7fc4f4899789d) Thanks @gcanti! - Restrict `Schema.brand` to a single concrete identifier and require `Schema.fromBrand` to use the constructor's sole brand key. Apply `brand` or `fromBrand` repeatedly when composing distinct brands. For enum brand keys, pass the enum member instead of its string value.
+
+- [#8575](https://github.com/Effect-TS/effect/pull/8575) [`e5f7d12`](https://github.com/Effect-TS/effect/commit/e5f7d12af9abef188f7dc39b0207af1801b03ffd) Thanks @tim-smart! - Retry failed workflow run resets instead of acknowledging deferred completion before the run resumes.
+
 ## 4.0.0-rc.118
 
 ### Patch Changes
