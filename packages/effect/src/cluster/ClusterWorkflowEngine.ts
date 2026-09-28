@@ -299,7 +299,7 @@ export const make = Effect.gen(function*() {
     )
 
     if (Option.isNone(maybeSuspended)) return
-    yield* storage.clearRepliesIfCurrent(
+    yield* sharding.reset(
       Snowflake.Snowflake(maybeSuspended.value.requestId),
       Snowflake.Snowflake(maybeSuspended.value.id)
     )
